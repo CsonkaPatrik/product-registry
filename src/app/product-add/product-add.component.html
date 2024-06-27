@@ -1,0 +1,22 @@
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+<div class="product-add-container">
+    <h2>Add Product</h2>
+    <form (ngSubmit)="addProduct()">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" [(ngModel)]="name" name="name" required>
+      </div>
+      <div>
+        <label for="price">Price:</label>
+        <input type="number" id="price" [(ngModel)]="price" name="price" required>
+      </div>
+      <div>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" [(ngModel)]="quantity" name="quantity" required>
+      </div>
+      <button type="submit">Add Product</button>
+    </form>
+  </div>
+</div>
+
+
